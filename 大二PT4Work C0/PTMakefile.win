@@ -1,0 +1,31 @@
+# Project: ptprj
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = ZFunc25.o pt4.o
+LINKOBJ  = ZFunc25.o pt4.o
+LIBS     = -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -mwindows -m32 -g3
+INCS     = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = ptprj.exe
+CXXFLAGS = $(CXXINCS) -m32 -Wall -std=c++14 -g3
+CFLAGS   = $(INCS) -m32 -Wall -std=c99 -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+ZFunc25.o: ZFunc25.c
+	$(CC) -c ZFunc25.c -o ZFunc25.o $(CFLAGS)
+
+pt4.o: pt4.c
+	$(CC) -c pt4.c -o pt4.o $(CFLAGS)
