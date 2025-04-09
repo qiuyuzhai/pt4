@@ -1,0 +1,10 @@
+Variant 3397
+ZFunc:   26
+ZArray:  123
+ZMatrix: 98
+String:  12, 21, 33, 61
+File:    32, 57
+Text:    8, 45
+Recur:   10, 17, 29
+Dynamic: 4, 19, 26, 31, 57, 78
+Tree:    7, 24, 33, 42, 50, 57, 67, 81, 91, 94
