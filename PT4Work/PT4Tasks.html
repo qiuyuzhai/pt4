@@ -1,0 +1,38 @@
+<!-- Programming Taskbook 4.23 | Copyright (c) M. Abramyan, 1998-2022 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>PT4Tasks</title>
+<style type="text/css">
+H1{font-family:"Arial";font-size:20pt;text-indent:0px;margin-top:10px; margin-right:10px; margin-bottom:0px; margin-left:10px;}
+H2{font-family:"Arial";font-size:16pt;text-indent:0px;margin-top:5px; margin-right:10px; margin-bottom:0px; margin-left:10px;}
+P{font-family:"Times New Roman";text-align:left;font-size:12pt;text-indent:0px;margin-top:0px; margin-right:10px; margin-bottom:0px; margin-left:10px;}
+TD{font-family:"Times New Roman";font-size:12pt;}
+LI{font-family:"Times New Roman";font-size:12pt;}
+UL{font-family:"Times New Roman";font-size:12pt;}
+SUB{font-family:"Times New Roman";font-size:8pt;}
+SUP{font-family:"Times New Roman";font-size:8pt;}
+TABLE{margin-top:0px; margin-bottom:0px;}
+P.ptAuthor{text-align:right;font-size:10pt;font-style:italic;}
+P.ptTask{text-align:justify;text-indent:-50px;margin-top:5px; margin-left:60px;}
+P.ptTaskQuote{text-align:left;margin-left:120px;margin-top:5px;margin-bottom:0px;}
+P.ptTaskCenter{text-align:center;margin-left:60px;margin-top:5px;margin-bottom:0px;}
+P.ptTaskContinue{text-align:justify;margin-left:60px;margin-top:5px; }
+P.ptComment{text-align:justify;text-indent:50px;margin-top:5px;}
+P.ptCommentCenter{text-align:center;margin-top:0px;}
+P.ptCommentQuote{text-align:left;margin-left:120px;margin-top:0px;margin-bottom:0px;}
+P.ptCommentContinue{text-align:justify;margin-top:0px;}
+P.ptFooter{text-align:right;font-size:10pt;font-style:italic;margin-right:0px;}
+SPAN.ptSpecial{font-family:"Arial";}
+PRE{text-align:left;font-size:10pt;text-indent:0px;margin-top:5px; margin-right:10px; margin-bottom:0px; margin-left:60px;}
+CODE{font-size:10pt;}
+TT{font-size:10pt;}
+P.ptPicture{font-family:Arial, sans-serif;margin-top: 5px;margin-bottom: 5px;margin-left: 60px;font-size: small;color: #000080;text-indent: 0pt;text-align: justify}
+</style>
+</head><body>
+<h1>Trees (based on&nbsp;pointers)</h1>
+<p class="ptAuthor">M.&nbsp;E.&nbsp;Abramyan, 2008, 2012</p>
+<p class="ptComment"> All numbers mentioned in the tasks of this group are of integer type. All pointers are of PNode type; they point to records of TNode type. In the tasks of this group the Data, Left, Right, and Parent fields of the TNode record are used, therefore one can assume that the PNode and TNode types are defined as follows: </p><p class="ptComment">[Pascal] </p><p class="ptCommentQuote"><tt>type</tt><br> &nbsp; &nbsp;<tt>PNode = ^TNode;</tt><br> &nbsp; &nbsp;<tt>TNode = record</tt><br> &nbsp; &nbsp; &nbsp; &nbsp;<tt>Data: integer;</tt><br> &nbsp; &nbsp; &nbsp; &nbsp;<tt>Left: PNode;</tt><br> &nbsp; &nbsp; &nbsp; &nbsp;<tt>Right: PNode;</tt><br> &nbsp; &nbsp; &nbsp; &nbsp;<tt>Parent: PNode;</tt><br> &nbsp; &nbsp;<tt>end;</tt></p><p class="ptCommentContinue"></p><p class="ptComment">[C/C++] </p><p class="ptCommentQuote"><tt>struct Node;</tt><br><br><tt>typedef struct Node TNode;</tt><br><tt>typedef struct Node *PNode;</tt><br><br></p><p class="ptCommentQuote"><tt>struct Node</tt><br><tt>{</tt><br> &nbsp; &nbsp;<tt>int Data;</tt><br> &nbsp; &nbsp;<tt>PNode Left;</tt><br> &nbsp; &nbsp;<tt>PNode Right;</tt><br> &nbsp; &nbsp;<tt>PNode Parent;</tt><br><tt>};</tt></p><p class="ptCommentContinue"></p><p class="ptComment">In the most of the tasks only the Data, Left, and Right fields of the TNode record are used. The Parent field is required in the tasks devoted to doubly linked trees. </p><p class="ptComment">The value of the Data field of a variable of TNode type is considered as the <i>value of the corresponding tree node</i>. </p><p class="ptComment">In C/C++ programs the DeleteNode(p) function call (or, in C++, the delete&nbsp;p operator) should be used to free the memory that a pointer p (of the PNode type) addresses.</p>
+<h2>General trees</h2>
+<p class="ptTask"><span class="ptSpecial">Tree86°</span>. In a <i>general tree</i> a node may have more than two child nodes arranged in fixed order (from left to right). A general tree may be represented by linked records of the TNode type as follows: the <i>Left</i> field of any node points to its leftmost child whereas the <i>Right</i> field points to the nearest right sibling of this node. The tree root has no siblings, therefore its <i>Right</i> field always equals NULL. A pointer&nbsp;<i>P</i><sub>1</sub> to the root of a nonempty binary tree is given. Create a general tree that corresponds to the given binary tree and output the pointer&nbsp;<i>P</i><sub>2</sub> to the root of the created general tree. </p>
+<hr noshade>
+<p class="ptFooter">Page generation date: 2023/9/17.</p>
+</body></html>

@@ -1,0 +1,25 @@
+TASK CHECKING (6a-Zhang Zipeng)
+Date and time of check: 12.06.2023 16:08
+-------------------------
+ 1. SUMMARY INFORMATION
+-------------------------
+Solved tasks (4):
+ ZFunc7       ZFunc20      ZFunc49      Tree39      
+Tasks whose solutions have defects (3):
+ ZFunc35      ZArray59     Text41      
+Summary by each task group:
+ ZFunc 3/4(75%)                         ZArray 0/11(0%)                       
+ ZMatrix 0/7(0%)                        String 0/4(0%)                        
+ File 0/2(0%)                           Text 0/3(0%)                          
+ Recur 0/3(0%)                          Dynamic 0/6(0%)                       
+ Tree 1/10(10%)                         TOTAL: 4/50(8%)                       
+-------------------------
+ 2. COMPLETE INFORMATION
+-------------------------
+= ZFunc7      y09/04 19:03 [version 5] 1/Solution is correct
+= ZFunc20     y11/06 00:15 [version 6] 1/Solution is correct
+= ZFunc35     y04/06 10:07 [version 3] 4/Task solutions are not accepted after the deadline
+= ZFunc49     y10/04 01:31 [version 1] 1/Solution is correct
+= ZArray59    y11/06 08:21 [version 1] 4/Task solutions are not accepted after the deadline
+= Text41      y11/06 15:08 [version 1] 4/Task solutions are not accepted after the deadline
+= Tree39      y11/06 16:20 [version 1] 1/Solution is correct

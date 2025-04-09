@@ -1,0 +1,51 @@
+= 6a-Zhang Zipeng           (C:\PT4Work)
+ZFunc7      c14/02 09:03 Acquaintance with the task.
+ZFunc26     c14/02 09:05 Acquaintance with the task.
+ZFunc6      c16/02 14:08 Acquaintance with the task.--2
+ZFunc6      c16/02 14:24*Wrong solution.
+ZFunc6      c16/02 14:25*The task is solved! 
+ZFunc10     c16/02 14:52 Acquaintance with the task.
+ZFunc10     c16/02 15:07 An attempt to output superfluous data.--2
+ZFunc10     c16/02 15:14*The task is solved! 
+ZFunc26     c21/02 07:47 Acquaintance with the task.--2
+ZFunc26     c21/02 07:58*Some required data are not input.
+ZFunc26     c21/02 07:59*The task is solved! 
+ZFunc25     c21/02 08:05 Acquaintance with the task.
+ZFunc25     c21/02 08:13*The task is solved! 
+ZArray124   c21/02 08:13 Acquaintance with the task.--2
+ZArray2     c23/02 14:08*Some data are not output.
+ZArray2     c23/02 14:09*The task is solved! 
+ZArray124   c23/02 14:12 Acquaintance with the task.
+ZArray124   c23/02 14:17*Some required data are not input.
+ZArray124   c23/02 14:27*Wrong solution.
+ZArray124   c23/02 14:29 Wrong solution.--4
+ZArray116   c23/02 14:42*Some required data are not input.
+ZArray116   c23/02 14:42*An attempt to output superfluous data.
+ZArray124   c23/02 14:46*Wrong solution.--3
+ZArray124   c03/04 00:52 Wrong solution.--2
+ZMatrix98   c10/06 21:53*The task is solved! 
+Recur17     c10/06 21:56*The task is solved! 
+Tree53      c10/06 23:37*Correct data input.
+String11    c11/06 00:23*The task is solved! 
+Recur30     c17/06 21:54*The task is solved! 
+Recur9      c17/06 22:11*The task is solved! 
+Tree42      c18/06 07:30*The task is solved! 
+Tree33      c18/06 07:31*The task is solved! 
+Tree57      c18/06 07:31*The task is solved! 
+Dynamic56   c18/06 07:31 Acquaintance with the task.
+Dynamic26   c18/06 07:31*The task is solved! 
+Recur30     c18/06 07:31*The task is solved! 
+Dynamic26   c19/06 17:22*The task is solved! 
+Dynamic6    c19/06 17:25*The task is solved! 
+String32    c19/06 17:28*The task is solved! 
+String58    c19/06 17:32*The task is solved! 
+Tree53      c19/06 18:52*Correct data input.--2
+Tree57      c20/06 08:27*The task is solved! 
+Dynamic56   c20/06 16:01*The task is solved! 
+Dynamic20   c20/06 16:02*The task is solved! 
+Tree53      c20/06 16:03 Error ACCESS_VIOLATION.
+Tree53      c20/06 16:03*The task is solved! 
+Tree96      c20/06 16:04*The task is solved! 
+String22    c20/06 16:47*The task is solved! 
+String32    c20/06 16:48*The task is solved! 
+File32      c22/06 23:45*The task is solved! 

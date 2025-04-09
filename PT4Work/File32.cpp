@@ -1,0 +1,28 @@
+#include "pt4.h"
+#include <fstream>
+#include <cstdio>
+using namespace std;
+
+void Solve()
+{
+    Task("File32");
+    string name,name2 = "$$.tmp";
+    pt >> name;
+    ifstream f(name,ios::binary);
+    ofstream f2(name2,ios::binary);
+    f.seekg(0,ios::end);
+    int s = f.tellg()/4;
+    for (int i = s/2; i < s; i++)
+    {
+        f.seekg(i*4);
+        int a;
+        f.read((char*)&a,4);
+        f2.write((char*)&a,4);
+    }
+    f.close();
+    f2.close();
+    remove(name.c_str());
+    rename(name2.c_str(),name.c_str()); 
+
+}
+

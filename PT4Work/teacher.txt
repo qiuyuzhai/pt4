@@ -1,0 +1,20 @@
+TASK CHECKING (6a-Zhang Zipeng)
+Date and time of check: 26.02.2023 15:18
+-------------------------
+ 1. SUMMARY INFORMATION
+-------------------------
+Solved tasks (1):
+ ZFunc26     
+Tasks for which the correct solutions have not been found in the repository (1):
+ ZArray124   
+Summary by each task group:
+ ZFunc 1/1(***)                         ZArray 0/1(0%)                        
+ ZMatrix 0/1(0%)                        String 0/4(0%)                        
+ File 0/2(0%)                           Text 0/2(0%)                          
+ Recur 0/3(0%)                          Dynamic 0/6(0%)                       
+ Tree 0/10(0%)                          TOTAL: 1/30(3%)                       
+-------------------------
+ 2. COMPLETE INFORMATION
+-------------------------
+= ZFunc26     c21/02 07:59 [version 2] 1/Solution is correct
+= ZArray124   c23/02 14:46 [version 6] 2/No version in the repository with the correct solution
