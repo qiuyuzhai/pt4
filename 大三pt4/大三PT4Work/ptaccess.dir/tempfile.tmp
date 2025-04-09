@@ -1,0 +1,100 @@
+#include "pt4.h"
+
+#include "mpi.h"
+
+#include <cmath>
+#include <cstring>
+
+int k;              // number of processes
+int r;              // rank of the current process
+
+int m, p, q;        // sizes of the given matrices
+int na, nb;         // sizes of the matrix bands
+
+int *a_, *b_, *c_;  // arrays to store matrices in the master process
+int *a, *b, *c;     // arrays to store matrix bands in each process
+
+
+void Matr1GatherFile(int m, const char* filename)
+{
+    // Broadcast the size of the matrix and the file name to all processes
+    MPI_Bcast(&m, 1, MPI_INT, 0, MPI_COMM_WORLD);
+    MPI_Bcast((void*)filename, strlen(filename) + 1, MPI_CHAR, 0, MPI_COMM_WORLD);
+
+    // Open the file for writing
+    MPI_File file;
+    MPI_File_open(MPI_COMM_WORLD, filename, MPI_MODE_CREATE | MPI_MODE_WRONLY, MPI_INFO_NULL, &file);
+
+    // Write the bands to the resulting file
+    for (int i = 0; i < na; i++) {
+        if (i < m) {  // Check if the row is valid for the result
+            MPI_File_seek(file, (r * na + i) * q * sizeof(int), MPI_SEEK_SET);
+            MPI_File_write_all(file, &c[i * q], q, MPI_INT, MPI_STATUS_IGNORE);
+        }
+    }
+
+    // Close the file
+    MPI_File_close(&file);
+}
+
+void Solve()
+{
+    Task("MPI9Matr9");
+    int flag;
+    MPI_Initialized(&flag);
+    if (flag == 0)
+        return;
+    int rank, size;
+    MPI_Comm_size(MPI_COMM_WORLD, &size);
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    k = size;
+    r = rank;
+    // Input the sizes of matrices and bands (from the master process)
+    if (r == 0) {
+        // The master process (rank 0) will initialize the data
+        pt >> m >> p >> q;
+        pt >> na >> nb;
+
+        // Initialize matrices a_, b_, and c_ on the master process
+        a_ = new int[na * p];
+        b_ = new int[p * q];
+        c_ = new int[na * q];
+
+        // Read the matrices from the input
+        // pt >> a_;
+        // pt >> b_;
+    }
+
+    // Broadcast the matrix sizes to all processes
+    MPI_Bcast(&m, 1, MPI_INT, 0, MPI_COMM_WORLD);
+    MPI_Bcast(&p, 1, MPI_INT, 0, MPI_COMM_WORLD);
+    MPI_Bcast(&q, 1, MPI_INT, 0, MPI_COMM_WORLD);
+    MPI_Bcast(&na, 1, MPI_INT, 0, MPI_COMM_WORLD);
+    MPI_Bcast(&nb, 1, MPI_INT, 0, MPI_COMM_WORLD);
+
+    // Allocate memory for matrix bands on each process
+    a = new int[na * p];
+    b = new int[p * q];
+    c = new int[na * q];
+
+    // Scatter the data to all processes
+    MPI_Scatter(a_, na * p / k, MPI_INT, a, na * p / k, MPI_INT, 0, MPI_COMM_WORLD);
+    MPI_Bcast(b_, p * q, MPI_INT, 0, MPI_COMM_WORLD);
+
+    // Perform matrix multiplication on each process for its band
+    for (int i = 0; i < na; i++) {
+        for (int j = 0; j < q; j++) {
+            c[i * q + j] = 0;
+            for (int k = 0; k < p; k++) {
+                c[i * q + j] += a[i * p + k] * b[k * q + j];
+            }
+        }
+    }
+
+    // Use Matr1GatherFile to gather the matrix product and write it to the file
+    char filename[100];
+    if (r == 0) 
+        pt >> filename;
+    
+    Matr1GatherFile(m, filename);
+}

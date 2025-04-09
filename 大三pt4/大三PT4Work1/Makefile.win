@@ -1,0 +1,31 @@
+# Project: ptprj
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = TimD4.o pt4.o
+LINKOBJ  = TimD4.o pt4.o
+LIBS     = -L"C:/PROGRAM FILES (X86)/EMBARCADERO/DEV-CPP/TDM-GCC-64/x86_64-w64-mingw32/lib32" -static-libgcc -mwindows libseh.a -m32 -g3
+INCS     = -I"C:/PROGRAM FILES (X86)/EMBARCADERO/DEV-CPP/TDM-GCC-64/include" -I"C:/PROGRAM FILES (X86)/EMBARCADERO/DEV-CPP/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/PROGRAM FILES (X86)/EMBARCADERO/DEV-CPP/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
+CXXINCS  = -I"C:/PROGRAM FILES (X86)/EMBARCADERO/DEV-CPP/TDM-GCC-64/include" -I"C:/PROGRAM FILES (X86)/EMBARCADERO/DEV-CPP/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/PROGRAM FILES (X86)/EMBARCADERO/DEV-CPP/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/PROGRAM FILES (X86)/EMBARCADERO/DEV-CPP/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"
+BIN      = ptprj.exe
+CXXFLAGS = $(CXXINCS) -m32 -g3 -Wall -std=c++14
+CFLAGS   = $(INCS) -m32 -g3
+DEL      = C:\PROGRAM FILES (X86)\EMBARCADERO\DEV-CPP\DEVCPP.EXE INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+TimD4.o: TimD4.cpp
+	$(CPP) -c TimD4.cpp -o TimD4.o $(CXXFLAGS)
+
+pt4.o: pt4.cpp
+	$(CPP) -c pt4.cpp -o pt4.o $(CXXFLAGS)

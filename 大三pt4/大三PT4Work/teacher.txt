@@ -1,0 +1,90 @@
+TASK CHECKING (3a-Zhai Qiuyyu)
+Date and time of check: 29.12.2024 12:42
+-------------------------
+ 1. SUMMARY INFORMATION
+-------------------------
+Solved tasks (51):
+ MPI1Proc3    MPI1Proc8    MPI2Send2    MPI2Send5    MPI2Send8    MPI2Send13  
+ MPI2Send16   MPI2Send18   MPI2Send20   MPI3Coll13   MPI3Coll17   MPI3Coll25  
+ MPI4Type12   MPI4Type17   MPI4Type19   MPI5Comm2    MPI5Comm12   MPI5Comm13  
+ MPI5Comm22   MPI5Comm26   MPI5Comm28   MPI6File4    MPI6File8    MPI6File10  
+ MPI6File11   MPI6File16   MPI6File17   MPI6File21   MPI6File23   MPI6File28  
+ MPI7Win2     MPI7Win6     MPI7Win7     MPI7Win12    MPI7Win17    MPI7Win20   
+ MPI7Win21    MPI7Win26    MPI8Inter2   MPI8Inter6   MPI8Inter7   MPI8Inter10 
+ MPI8Inter14  MPI8Inter16  MPI8Inter19  OMPBegin4    OMPBegin6    MPI9Matr21  
+ MPI9Matr12   MPI9Matr13   MPI9Matr5   
+Tasks whose solutions have defects (4):
+ MPI5Comm9    MPI5Comm24   MPI8Inter3   OMPBegin12  
+Tasks for which new solutions are not checked yet (1):
+ MPI5Comm9   
+Tasks for which the correct solutions have not been found in the repository (3):
+ MPI9Matr33   MPI9Matr38   MPI9Matr9   
+Summary by each task group:
+ MPI1Proc 2/2[2/2](***)                 MPI2Send 7/7[7/7](***)                
+ MPI3Coll 3/3[3/3](***)                 MPI4Type 3/3[5/5](***)                
+ MPI5Comm 6/8[7/9](78%)                 MPI6File 9/9[9/9](***)                
+ MPI7Win 8/8[9/9](***)                  MPI8Inter 7/9[7/9](78%)               
+ OMPBegin 2/3[8/12](67%)                MPI9Matr 4/7[6/10](60%)               
+ MPIGravit 0/1[0/5](0%)                 TOTAL: 51/60[63/80](79%)              
+-------------------------
+ 2. COMPLETE INFORMATION
+-------------------------
+= MPI1Proc3   c09/09 12:58 [version 11] 1/Solution is correct (points: 1)
+= MPI1Proc8   c11/09 14:49 [version 4] 1/Solution is correct (points: 1)
+= MPI2Send2   c24/09 12:15 [version 5] 1/Solution is correct (points: 1)
+= MPI2Send5   c24/09 14:35 [version 2] 1/Solution is correct (points: 1)
+= MPI2Send8   c24/09 18:53 [version 8] 1/Solution is correct (points: 1)
+= MPI2Send13  c25/09 15:42 [version 23] 1/Solution is correct (points: 1)
+= MPI2Send16  c25/09 15:15 [version 5] 1/Solution is correct (points: 1)
+= MPI2Send18  c06/10 13:43 [version 24] 1/Solution is correct (points: 1)
+= MPI2Send20  c06/10 15:14 [version 8] 1/Solution is correct (points: 1)
+= MPI3Coll13  c07/10 00:30 [version 4] 1/Solution is correct (points: 1)
+= MPI3Coll17  c07/10 22:38 [version 15] 1/Solution is correct (points: 1)
+= MPI3Coll25  c21/10 12:08 [version 11] 1/Solution is correct (points: 1)
+= MPI4Type12  c23/10 15:58 [version 14] 1/Solution is correct (points: 1)
+= MPI4Type17  c29/10 20:13 [version 6] 1/Solution is correct (points: 2)
+= MPI4Type19  c29/10 22:09 [version 8] 1/Solution is correct (points: 2)
+= MPI5Comm2   c31/10 16:32 [version 15] 1/Solution is correct (points: 1)
+= MPI5Comm9   c30/10 09:26 [version 1] 6/Borrowed solution: someone else's program is used (points: 1)
+= MPI5Comm12  c30/10 14:33 [version 3] 1/Solution is correct (points: 1)
+= MPI5Comm13  c30/10 15:00 [version 3] 1/Solution is correct (points: 1)
+= MPI5Comm22  c30/10 22:44 [version 9] 1/Solution is correct (points: 1)
+= MPI5Comm24  c30/10 22:53 [version 7] 6/Borrowed solution: someone else's program is used (points: 1)
+= MPI5Comm26  c31/10 19:52 [version 3] 1/Solution is correct (points: 1)
+= MPI5Comm28  c03/11 21:27 [version 3] 1/Solution is correct (points: 2)
+= MPI6File4   c20/11 14:08 [version 2] 1/Solution is correct (points: 1)
+= MPI6File8   c20/11 14:36 [version 2] 1/Solution is correct (points: 1)
+= MPI6File10  c05/12 22:20 [version 4] 1/Solution is correct (points: 1)
+= MPI6File11  c20/11 14:48 [version 1] 1/Solution is correct (points: 1)
+= MPI6File16  c27/11 15:37 [version 29] 1/Solution is correct (points: 1)
+= MPI6File17  c20/11 16:34 [version 1] 1/Solution is correct (points: 1)
+= MPI6File21  c27/11 16:52 [version 25] 1/Solution is correct (points: 1)
+= MPI6File23  c30/11 12:00 [version 4] 1/Solution is correct (points: 1)
+= MPI6File28  c10/12 13:31 [version 4] 1/Solution is correct (points: 1)
+= MPI7Win2    c30/11 01:27 [version 5] 1/Solution is correct (points: 1)
+= MPI7Win6    c30/11 01:22 [version 1] 1/Solution is correct (points: 1)
+= MPI7Win7    c30/11 01:24 [version 1] 1/Solution is correct (points: 1)
+= MPI7Win12   c04/12 15:16 [version 10] 1/Solution is correct (points: 1)
+= MPI7Win17   c10/12 13:27 [version 62] 1/Solution is correct (points: 1)
+= MPI7Win20   c07/12 15:11 [version 2] 1/Solution is correct (points: 1)
+= MPI7Win21   c07/12 15:19 [version 8] 1/Solution is correct (points: 1)
+= MPI7Win26   c08/12 00:05 [version 24] 1/Solution is correct (points: 2)
+= MPI8Inter2  c08/12 17:24 [version 3] 1/Solution is correct (points: 1)
+= MPI8Inter3  c08/12 17:12 [version 16] 6/Borrowed solution: someone else's program is used (points: 1)
+= MPI8Inter6  c08/12 17:44 [version 6] 1/Solution is correct (points: 1)
+= MPI8Inter7  c08/12 23:47 [version 5] 1/Solution is correct (points: 1)
+= MPI8Inter10 c09/12 00:21 [version 4] 1/Solution is correct (points: 1)
+= MPI8Inter14 c09/12 00:19 [version 4] 1/Solution is correct (points: 1)
+= MPI8Inter16 c09/12 00:16 [version 5] 1/Solution is correct (points: 1)
+= MPI8Inter19 c09/12 09:23 [version 8] 1/Solution is correct (points: 1)
+= OMPBegin4   c18/12 18:08 [version 27] 1/Solution is correct (points: 4)
+= OMPBegin6   c18/12 20:00 [version 20] 1/Solution is correct (points: 4)
+= OMPBegin12  c23/12 00:22 [version 10] 3/Solution should be modified (points: 1)
+  Wrong balancing
+= MPI9Matr21  c29/12 01:52 [version 5] 1/Solution is correct (points: 1)
+= MPI9Matr33  c29/12 03:24 [version 3] 2/No version in the repository with the correct solution
+= MPI9Matr12  c29/12 02:59 [version 2] 1/Solution is correct (points: 2)
+= MPI9Matr13  c29/12 03:12 [version 4] 1/Solution is correct (points: 1)
+= MPI9Matr38  c29/12 03:20 [version 3] 2/No version in the repository with the correct solution
+= MPI9Matr5   c29/12 03:38 [version 1] 1/Solution is correct (points: 2)
+= MPI9Matr9   c29/12 03:43 [version 1] 2/No version in the repository with the correct solution

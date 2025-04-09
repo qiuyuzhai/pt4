@@ -1,0 +1,60 @@
+TASK CHECKING (6a-Zhai Qiuyyu)
+Date and time of check: 02.07.2024 12:15
+-------------------------
+ 1. SUMMARY INFORMATION
+-------------------------
+Solved tasks (38):
+ String25     String28     String33     String46     String61     String63    
+ File12       File32       File57       File68       Text12       Text34      
+ Text42       Text45       Text51       OOP1Creat3   OOP2Struc11  OOP3Behav7  
+ OOP3Behav9   OOP3Behav10  OOP3Behav15  OOP3Behav13  OOP3Behav16  LinqBegin7  
+ LinqBegin14  LinqBegin25  LinqBegin37  LinqBegin39  LinqBegin49  LinqBegin50 
+ LinqBegin56  LinqObj12    LinqObj13    LinqObj30    LinqObj42    LinqObj54   
+ LinqObj65    LinqObj80   
+Summary by each task group:
+ String 6/6[12/12](***)                 File 4/4[8/8](***)                    
+ Text 5/5[10/10](***)                   OOP1Creat 1/1[2/2](***)               
+ OOP2Struc 1/1[2/2](***)                OOP3Behav 6/6[18/18](***)             
+ LinqBegin 8/8[10/10](***)              LinqObj 7/7[18/18](***)               
+ TOTAL: 38/38[80/80](***)              
+-------------------------
+ 2. COMPLETE INFORMATION
+-------------------------
+= String25    S05/03 20:27 [version 1] 1/Solution is correct (points: 2)
+= String28    S05/03 20:40 [version 5] 1/Solution is correct (points: 2)
+= String33    S12/03 16:44 [version 7] 1/Solution is correct (points: 2)
+= String46    S07/03 18:54 [version 4] 1/Solution is correct (points: 2)
+= String61    S19/03 17:05 [version 27] 1/Solution is correct (points: 2)
+= String63    S07/03 19:40 [version 9] 1/Solution is correct (points: 2)
+= File12      S07/04 15:05 [version 3] 1/Solution is correct (points: 2)
+= File32      S09/04 20:19 [version 15] 1/Solution is correct (points: 2)
+= File57      S11/04 19:37 [version 33] 1/Solution is correct (points: 2)
+= File68      S11/04 09:14 [version 4] 1/Solution is correct (points: 2)
+= Text12      S10/04 21:02 [version 2] 1/Solution is correct (points: 2)
+= Text34      S10/04 22:09 [version 12] 1/Solution is correct (points: 2)
+= Text42      S11/04 12:40 [version 9] 1/Solution is correct (points: 2)
+= Text45      S11/04 19:58 [version 7] 1/Solution is correct (points: 2)
+= Text51      S16/04 16:36 [version 22] 1/Solution is correct (points: 2)
+= OOP1Creat3  S20/05 16:08 [version 5] 1/Solution is correct (points: 2)
+= OOP2Struc11 S09/06 17:20 [version 1] 1/Solution is correct (points: 2)
+= OOP3Behav7  S24/05 00:07 [version 13] 1/Solution is correct (points: 2)
+= OOP3Behav9  S24/05 02:01 [version 4] 1/Solution is correct (points: 2)
+= OOP3Behav10 S25/05 23:23 [version 8] 1/Solution is correct (points: 2)
+= OOP3Behav15 S26/05 00:05 [version 8] 1/Solution is correct (points: 4)
+= OOP3Behav13 S02/06 22:26 [version 4] 1/Solution is correct (points: 4)
+= OOP3Behav16 S10/06 01:41 [version 2] 1/Solution is correct (points: 4)
+= LinqBegin7  S11/06 16:27 [version 1] 1/Solution is correct (points: 1)
+= LinqBegin14 S11/06 16:43 [version 2] 1/Solution is correct (points: 1)
+= LinqBegin25 S11/06 16:54 [version 2] 1/Solution is correct (points: 1)
+= LinqBegin37 S16/06 23:35 [version 1] 1/Solution is correct (points: 1)
+= LinqBegin39 S16/06 23:38 [version 1] 1/Solution is correct (points: 1)
+= LinqBegin49 S18/06 16:19 [version 5] 1/Solution is correct (points: 1)
+= LinqBegin50 S17/06 01:59 [version 2] 1/Solution is correct (points: 2)
+= LinqBegin56 S18/06 16:38 [version 4] 1/Solution is correct (points: 2)
+= LinqObj12   S27/06 02:38 [version 11] 1/Solution is correct (points: 2)
+= LinqObj13   S28/06 03:17 [version 8] 1/Solution is correct (points: 2)
+= LinqObj30   S28/06 03:09 [version 7] 1/Solution is correct (points: 2)
+= LinqObj42   S28/06 22:40 [version 3] 1/Solution is correct (points: 3)
+= LinqObj54   S28/06 23:02 [version 2] 1/Solution is correct (points: 3)
+= LinqObj65   S29/06 00:11 [version 8] 1/Solution is correct (points: 3)
+= LinqObj80   S29/06 00:35 [version 3] 1/Solution is correct (points: 3)
