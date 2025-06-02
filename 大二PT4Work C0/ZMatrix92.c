@@ -2,6 +2,7 @@
 //A real-valued square matrix of order M is given. 
 //Assign zero value to the matrix elements that lie above the main diagonal and above the secondary diagonal simultaneously. 
 //Do not use conditional statements.
+//给定一个 M 阶的实值方阵。将同时位于主对角线以上和副对角线以上的矩阵元素赋值为零。不使用条件语句
 
 void Solve(void)
 {
